@@ -8,9 +8,48 @@
   width: 500px;
 }
 
-.card .colorbox.purple {
+.card {
+  margin: auto;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.card-button {
+  background-color: rgb(200, 155, 162);
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  margin: auto;
+}
+
+.card img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.purple {
   background-color: purple;
 }
-.card .colorbox.orange {
+.orange {
   background-color: orange;
+}
+.blue {
+  background-color: orange;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.colorbox {
+  height: 40%;
+  aspect-ratio: 1/1;
+  margin: 20px;
 }

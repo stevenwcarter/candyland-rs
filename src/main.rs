@@ -35,9 +35,10 @@ fn CardBlock(props: &CardProps) -> Html {
             }
         }
     } else if card.symbol.is_some() {
+        let symbol = card.symbol.unwrap();
         html! {
             <div class="card">
-                { card.symbol.unwrap()}
+                <img src={format!("/img/{}.jpg", symbol)} />
             </div>
         }
     } else {
@@ -69,7 +70,7 @@ fn App() -> Html {
 
     html! {
         <div class="container">
-            <button onclick={next_card}><CardBlock card={(*card).clone()} /></button>
+            <button class="card-button" onclick={next_card}><CardBlock card={(*card).clone()} /></button>
         </div>
     }
 }
